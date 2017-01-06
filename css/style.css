@@ -109,13 +109,13 @@ a:hover, a:focus { color: #EEEEEE; }
 .r00 { background-color: #3D9970;}
 .r01 { background-color: #325e48;}
 
-.r1 { background-color: #99ccff;}
+.r1 { background-color: #7abdff;}
 .r2 { background-color: #66b3ff;}
-.r3 { background-color: #3399ff;}
-.r4 { background-color: #0080ff;}
-.r5 { background-color: #004d99;}
-.r6 { background-color: #003366;}
-.r7 { background-color: #001f3f;}
+.r3 { background-color: #52aaff;}
+.r4 { background-color: #3fa0ff;}
+.r5 { background-color: #2b96ff;}
+.r6 { background-color: #178cff;}
+.r7 { background-color: #0483ff;}
 
 .layer-info {
 	width: 50%;
@@ -123,20 +123,21 @@ a:hover, a:focus { color: #EEEEEE; }
 	font-size: 24px;
 }
 
+.layer7 { background: #7abdff !important;}
 .layer6 { background: #66b3ff !important;}
-.layer5 { background: #3399ff !important;}
-.layer4 { background: #0080ff !important;}
-.layer3 { background: #004d99 !important;}
-.layer2 { background: #003366 !important;}
-.layer1 { background: #001f3f !important;}
+.layer5 { background: #52aaff !important;}
+.layer4 { background: #3fa0ff !important;}
+.layer3 { background: #2b96ff !important;}
+.layer2 { background: #178cff !important;}
+.layer1 { background: #0483ff !important;}
 
 .drop-l7 { background: #66b3ff !important;}
-.drop-l6 { background: #3399ff !important;}
-.drop-l5 { background: #0080ff !important;}
-.drop-l4 { background: #004d99 !important;}
-.drop-l3 { background: #003366 !important;}
-.drop-l2 { background: #001f3f !important;}
-.drop-l1 { background: #000000 !important;}
+.drop-l6 { background: #52aaff !important;}
+.drop-l5 { background: #3fa0ff !important;}
+.drop-l4 { background: #2b96ff !important;}
+.drop-l3 { background: #178cff !important;}
+.drop-l2 { background: #0483ff !important;}
+.drop-l1 { background: #0079ef !important;}
 
 .has-been-added { opacity: .2; }
 
