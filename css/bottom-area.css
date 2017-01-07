@@ -8,9 +8,9 @@
 	font-size: 2em;
 	display: inline-block;
 	margin: 0.2em 0.1em;
-	padding-top: 2.25em;
-	width: 5.5em;
-	height: 5.5em;
+	padding: 1.5em;
+	/*width: 5.5em;*/
+	/*height: 5.5em;*/
 	border-radius: 4px;
 	background: white;
 	color: #76737C;
