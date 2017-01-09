@@ -17,6 +17,7 @@
 		<![endif]--><script>document.documentElement.className = 'js';</script>
 	</head>
 	<body class='layer5'>
+	<div id='overlay'></div>
 		<div class='container layer-info'>
 		<h1>Layer 5 - Transport layer</h1>
 		<ul>
@@ -41,7 +42,7 @@
 		<div id="drop-area" class="drop-area drop-l5">
 			<div>
 				<div class="drop-area__item"><div class="dummy"></div></div>
-				<div class="drop-area__item drop-feedback"><div class="dummy"></div></div>
+				<div class="drop-area__item d6 drop-feedback"><div class="dummy"></div></div>
 			</div>
 		</div>
 		<div class="drop-overlay"></div>
@@ -85,8 +86,12 @@
 						},
 						onEnd : function( wasDropped ) {
 							var afterDropFn = function() {
-								// hide dropArea
-								classie.remove( dropArea, 'show' );
+								// hide dropArea, unless all items are faded
+								if ($('.has-been-added').length != $('.grid__item').length){
+									classie.remove( dropArea, 'show' );
+								} else {
+									$('#drop-area').animate({height: 2000}, 1000, function(){location.href='./layer4.html'});
+								}
 								// remove class 'drag-active' from body
 								classie.remove( body, 'drag-active' );
 							};
@@ -107,5 +112,11 @@
 		<script src="js/anime.min.js"></script>
 		<script src="js/main.js"></script>
 		<!-- <script src="js/linemaker.js"></script> -->
+		<script src="js/jquery.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('#overlay').fadeOut();
+			});
+		</script>
 	</body>
 </html>

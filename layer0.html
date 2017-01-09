@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Layer 7</title>
+		<title>Why is this important?</title>
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
 		<link rel="stylesheet" type="text/css" href="css/decolines.css" />
@@ -16,31 +16,30 @@
   		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]--><script>document.documentElement.className = 'js';</script>
 	</head>
-	<body class='layer7'>
+	<body class='layer0'>
 	<div id='overlay'></div>
 		<div class='container layer-info'>
-		<h1>Layer 7 - Application layer</h1>
+		<h1>Impacts of this paper and layering</h1>
 		<ul>
-			<li>contains the highest levels protocols and interfaces</li>
-			<li>standardises communication, depend on lower protocols</li>
-			<li>HTTP, SSH, FTP, Telnet, DNS, SMTP, SNMP, Torrent</li>
-			<li>PDU: <strong>Data</strong></li>
+			<li>point one</li>
+			<li>point two</li>
+			<li>point three</li>
+			<li>point four</li>
+			<li>point five</li>
 		</ul>
 		</div>
 		<a href="index.html"><i class="back-to-menu fa fa-arrow-circle-o-left fa-6" aria-hidden="true"></i></a>
-		<a href="layer6.html"><i class="next-layer fa fa-arrow-circle-o-down fa-6" aria-hidden="true"></i></a>
+		<a href="layer1.html"><i class="previous-layer-last fa fa-arrow-circle-o-up fa-6" aria-hidden="true"></i></a>
 		<div class="container">
 			<div class="content">
 				<div id="grid" class="grid clearfix">
-					<div class="grid__item"><i class="fa fa-fw fa-image"></i>Data</div>
-					<div class="grid__item"><i class="fa fa-fw fa-database"></i>Data</div>
+					<div class="grid__item">Questions<i class="fa fa-fw fa-question-circle"></i></div>
 				</div>
 			</div><!-- /content -->
 		</div><!-- /container -->
-		<div id="drop-area" class="drop-area drop-l7">
+		<div id="drop-area" class="drop-area drop-l1">
 			<div>
-				<div class="drop-area__item"></div>
-				<div class="drop-area__item"></div>
+				<div class="drop-area__item"><div class="dummy"></div></div>
 			</div>
 		</div>
 		<div class="drop-overlay"></div>
@@ -88,7 +87,7 @@
 								if ($('.has-been-added').length != $('.grid__item').length){
 									classie.remove( dropArea, 'show' );
 								} else {
-									$('#drop-area').animate({height: 2000}, 1000, function(){location.href='./layer6.html'});
+									$('#drop-area').animate({height: 2000}, 1000, function(){location.href='./index.html'});
 								}
 								// remove class 'drag-active' from body
 								classie.remove( body, 'drag-active' );
@@ -107,10 +106,10 @@
 				} );
 			})();
 		</script>
-		<script src="js/jquery.js"></script>
 		<script src="js/anime.min.js"></script>
 		<script src="js/main.js"></script>
 		<!-- <script src="js/linemaker.js"></script> -->
+		<script src="js/jquery.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function(){
 				$('#overlay').fadeOut();

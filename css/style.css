@@ -6,7 +6,7 @@ body {
 	color: white;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	background: #66c6ff;
+	background: #0079ef;
 	font-weight: 400;
 	overflow: auto;
 }
@@ -33,7 +33,7 @@ a:hover, a:focus { color: #EEEEEE; }
 	border: 6px solid white;
 	text-align: center;
 	margin: 0;
-	padding: 0 0 0.15em 0;
+	padding: 100px 0 100px 0;
 	font-size: 9vw;
 	text-transform: uppercase;
 	line-height: 1;
@@ -89,7 +89,7 @@ a:hover, a:focus { color: #EEEEEE; }
 }
 
 .td_desc {
-	width: 20%;
+	width: 30%;
 }
 
 .stackcontainer td {
@@ -106,8 +106,13 @@ a:hover, a:focus { color: #EEEEEE; }
 	text-align: center;
 }
 
-.r00 { background-color: #3D9970;}
-.r01 { background-color: #325e48;}
+.whitetable > tbody > tr > td, .whitetable > tbody > tr > td > a {
+	font-size: 24px;
+	font-family: 'Roboto';
+}
+
+.r00 { background-color: #1666b9;}
+.r01 { background-color: #0e3f73;}
 
 .r1 { background-color: #7abdff;}
 .r2 { background-color: #66b3ff;}
@@ -130,6 +135,7 @@ a:hover, a:focus { color: #EEEEEE; }
 .layer3 { background: #2b96ff !important; height:100vh;}
 .layer2 { background: #178cff !important; height:100vh;}
 .layer1 { background: #0483ff !important; height:100vh;}
+.layer0 { background: #0079ef !important; height:100vh;}
 
 .drop-l7 { background: #66b3ff !important;}
 .drop-l6 { background: #52aaff !important;}
@@ -144,3 +150,22 @@ a:hover, a:focus { color: #EEEEEE; }
 .back-to-menu { z-index: 90; color: white !important; position: fixed; bottom: 20px; right: 20px; font-size: 4em !important}
 .next-layer, .previous-layer-last { z-index: 90; color: white !important; position: fixed; bottom: 20px; right: 80px; font-size: 4em !important}
 .previous-layer { z-index: 90; color: white !important; position: fixed; bottom: 20px; right: 140px; font-size: 4em !important}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding:0;
+  z-index: 99999;
+}
+.layer7 > #overlay {  background-color: #7abdff;}
+.layer6 > #overlay {  background-color: #66b3ff;}
+.layer5 > #overlay {  background-color: #52aaff;}
+.layer4 > #overlay {  background-color: #3fa0ff;}
+.layer3 > #overlay {  background-color: #2b96ff;}
+.layer2 > #overlay {  background-color: #178cff;}
+.layer1 > #overlay {  background-color: #0483ff;}
+.layer0 > #overlay {  background-color: #0079ef;}
